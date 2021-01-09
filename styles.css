@@ -1,38 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
 .home-page {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+
 .top-right-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    list-style-type: none;
+    padding: 16px 0;
 }
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14%;
+}
+
 .google-logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+.google-logo img {
+    width: 22%;
+}
+
 .search {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+.searchTerm {
+    padding: 14px;
+    width: 38%;
+    border-radius: 22px;
+    outline: none;
+    border: 1px solid #dfe1e5;
+    margin: 30px 0;
+}
+
+.searchTerm:hover {
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, .2);
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+.buttons button {
+    padding: 8px 14px;
+    margin: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.buttons button:hover {
+    border-color: grey;
+}
+
 .country {
     display: flex;
-    flex-direction: flex-end;
+    justify-self: flex-end;
+    background: #f2f2f2;
+    padding: 16px 0;
+    border-top: 1px solid #dadce0;
 }
-.bottom-left-links {
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
+
+.bottom-links {
+    display:flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    background: #f2f2f2;
+    border-top: 1px solid #dadce0;
 }
+
+.bottom-left-links,
 .bottom-right-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 16px 0;
+}
+
+.bottom-left-links a,
+.bottom-right-links a,
+.top-right-links a,
+.country p {
+    display: inline-flex;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+.bottom-left-links a:hover,
+.bottom-right-links a:hover,
+.top-right-links a:hover {
+    text-decoration: underline;
 }
